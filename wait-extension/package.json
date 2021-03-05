@@ -24,6 +24,6 @@
   "devDependencies": {
     "jsrsasign": "^10.1.12",
     "ncp": "^2.0.0",
-    "web-ext": "^5.2.0"
+    "web-ext": "^5.5.0"
   }
 }
