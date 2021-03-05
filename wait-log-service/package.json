@@ -1,0 +1,29 @@
+{
+  "name": "wait-log-service",
+  "version": "0.1.0",
+  "description": "Example implementation of a WAIT log service.",
+  "homepage": "https://github.com/vs-uulm/wait-prototype",
+  "bugs": {
+    "url": "https://github.com/vs-uulm/wait-prototype/issues"
+  },
+  "repository": "github:vs-uulm/wait-prototype.git",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "Dominik Meißner <dominik.meissner@uni-ulm.de> (https://uni-ulm.de/in/vs/meissner)",
+  "contributors": [
+    "Dominik Meißner <dominik.meissner@uni-ulm.de> (https://uni-ulm.de/in/vs/meissner)",
+    "Benjamin Erb <benjamin.erb@uni-ulm.de> (https://uni-ulm.de/in/vs/erb)"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "jszip": "^3.5.0",
+    "puppeteer": "^5.3.1"
+  }
+}

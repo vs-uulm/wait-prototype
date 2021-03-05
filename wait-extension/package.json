@@ -1,0 +1,29 @@
+{
+  "name": "wait-extension",
+  "version": "0.1.0",
+  "description": "This extension checks web content integrity",
+  "homepage": "https://github.com/vs-uulm/wait-prototype",
+  "bugs": {
+    "url": "https://github.com/vs-uulm/wait-prototype/issues"
+  },
+  "repository": "github:vs-uulm/wait-prototype.git",
+  "scripts": {
+    "test": "node node_modules/web-ext/bin/web-ext lint",
+    "start": "node node_modules/web-ext/bin/web-ext run",
+    "build": "node node_modules/web-ext/bin/web-ext build",
+    "postinstall": "node node_modules/ncp/bin/ncp node_modules/jsrsasign/lib/jsrsasign-all-min.js js/jsrsasign-all-min.js"
+  },
+  "keywords": [],
+  "author": "Dominik Meißner <dominik.meissner@uni-ulm.de> (https://uni-ulm.de/in/vs/meissner)",
+  "contributors": [
+    "Dominik Meißner <dominik.meissner@uni-ulm.de> (https://uni-ulm.de/in/vs/meissner)",
+    "Benjamin Erb <benjamin.erb@uni-ulm.de> (https://uni-ulm.de/in/vs/erb)"
+  ],
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "jsrsasign": "^10.1.12",
+    "ncp": "^2.0.0",
+    "web-ext": "^5.2.0"
+  }
+}

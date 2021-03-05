@@ -1,0 +1,14 @@
+.wait-body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
+    min-height: auto;
+    max-height: auto;
+}
+
+.wait-block {
+    margin: 5vw auto;
+    max-width: 50em;
+    border: 2px solid red;
+    border-radius: 5px;
+    padding: 16px 24px;
+}

@@ -1,0 +1,13 @@
+steps:
+
+- id: measure
+  uses: "./evaluation/"
+  dir: "/usr/src/evaluation"
+  runs: ["sh"]
+  args: ["-c", "mkdir -p /workspace/results && ./evaluation.sh && cp *.csv /workspace/results"]
+
+- id: analyze
+  uses: "docker://rocker/tidyverse:4.0.4"
+  dir: "/workspace/results"
+  runs: ["sh"]
+  args: ["-c", "R --vanilla < /workspace/evaluation/analysis.R"]

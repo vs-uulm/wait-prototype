@@ -1,0 +1,36 @@
+{
+    "manifest_version": 2,
+    "name": "WAIT",
+    "version": "0.1",
+    "description": "Checks integrity of web resources.",
+    "icons": {
+        "48": "icons/wait-48.png"
+    },
+    "browser_action": {
+        "default_icon": "icons/wait-32.png",
+        "default_title": "WAIT Extension",
+        "default_popup": "popup.html",
+        "theme_icons": [{
+            "light": "icons/wait-32-dark.png",
+            "dark": "icons/wait-32.png",
+            "size": 32
+        }]
+    },
+    "permissions": [
+        "webRequest",
+        "webRequestBlocking",
+        "*://*/*"
+    ],
+    "background": {
+        "scripts": [
+            "js/jsrsasign-all-min.js",
+            "js/background.js"
+        ]
+    },
+    "content_scripts": [{
+        "run_at": "document_start",
+        "matches": [ "*://*/*" ],
+        "js": [ "js/contentscript.js" ],
+        "css": [ "css/contentscript.css" ]
+    }]
+}
