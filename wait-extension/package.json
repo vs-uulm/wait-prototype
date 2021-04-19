@@ -22,7 +22,7 @@
   "license": "MIT",
   "private": true,
   "devDependencies": {
-    "jsrsasign": "^10.1.12",
+    "jsrsasign": "^10.2.0",
     "ncp": "^2.0.0",
     "web-ext": "^5.5.0"
   }
