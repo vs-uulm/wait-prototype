@@ -23,7 +23,7 @@
   "dependencies": {
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
-    "jszip": "^3.7.0",
+    "jszip": "^3.8.0",
     "puppeteer": "^5.3.1"
   }
 }
